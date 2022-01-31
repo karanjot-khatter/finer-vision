@@ -2,10 +2,10 @@ How to run the local enviroment?
 1) Clone the repository from github.
 2) The 'node_modules' folder should be missing, so to retrieve this we must execute the following command:
 npm install
-3) Install the latest version of node and npm (as this is required for this react app).
+3) Install the latest version of node and npm (as this is a react app).
 4) MySQL
 - Create a database called finer_vision
-- Execute the following query: 
+- Create the following query: 
 
 CREATE TABLE Users (
     id int NOT NULL,
@@ -19,4 +19,4 @@ CREATE TABLE Users (
     PRIMARY KEY (id)
 );
 
-5) In the current directory type 'npm start' in your terminal and this should open up the project.
+5) In the current directory run npm start and this should open up the window.
