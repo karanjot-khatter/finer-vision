@@ -5,7 +5,7 @@ npm install
 3) Install the latest version of node and npm (as this is a react app).
 4) MySQL
 - Create a database called finer_vision
-- Create the following query: 
+- Execute the following query: 
 
 CREATE TABLE Users (
     id int NOT NULL,
@@ -19,4 +19,8 @@ CREATE TABLE Users (
     PRIMARY KEY (id)
 );
 
-5) In the current directory run npm start and this should open up the window.
+5) In the current directory run the command 'npm start' and this should open up the project.
+
+REFERENCES:
+
+https://react-bootstrap.github.io/components/accordion/
