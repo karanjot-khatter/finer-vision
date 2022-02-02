@@ -23,11 +23,12 @@ CREATE TABLE Users (
 );
 
 7) In the 'finer-vision' directory run the command 'npm start' and this should open up the project.
+8) You can go to http://localhost:3000/users to see the list of users in the database, but after a form submission it should take you to that page anyway.
+
+ERRORS:
+- When you enter all the information in the steps and then click 'next' - the acordion headers need two clicks to function correctly. This is an jquery problem.
 
 REFERENCES:
 
 https://react-bootstrap.github.io/components/accordion/ - create accordion
 https://www.youtube.com/watch?v=re3OIOr9dJI - inserting data into database 
-
-ERRORS:
-- When you enter all the information in the first step and second step and then click 'next' - the acordion headers need two clicks to function correctly. This is an jquery problem.
