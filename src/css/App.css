@@ -76,6 +76,11 @@ body {
   padding-left: 10px;
 }
 
+.details-box .accordion-body .row textarea {
+  -webkit-box-shadow: inset 0 0 4px 4px grey;
+          box-shadow: inset 0 0 4px 4px grey;
+}
+
 .details-box .accordion-body .row p.firstAccordionValidation, .details-box .accordion-body .row p.secondAccordionValidation, .details-box .accordion-body .row p.finalAccordionValidation {
   color: red;
   margin-top: 10px;
@@ -141,4 +146,4 @@ body {
   left: 45%;
   margin: 20px;
 }
-/*# sourceMappingURL=app.css.map */
+/*# sourceMappingURL=App.css.map */
