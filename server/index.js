@@ -22,8 +22,6 @@ app.post('/create', (req, res) => {
     const dob = req.body.dob;
     const comments = req.body.comments;
 
-    console.log(req);
-
     db.query('INSERT INTO Users (first_name, surname, email_address, telephone_number, gender, dob, comments) VALUES (?, ?, ?, ? ,?, ?, ?)',
      [first_name, surname, email_address, telephone_number, gender, dob, comments ], (error, result) => {
          if (error) {
@@ -34,15 +32,15 @@ app.post('/create', (req, res) => {
      })
 })
 
-// app.get('/users', (req, res) => {
-//     db.query('SELECT * from Users', (error, result) => {
-//         if (error) {
-//             console.log(error);
-//         } else {
-//             res.send(result);
-//         }
-//     })
-// })
+app.get('/users', (req, res) => {
+    db.query('SELECT * from Users', (error, result) => {
+        if (error) {
+            console.log(error);
+        } else {
+            res.send(result);
+        }
+    })
+})
 
 app.listen(3001, () => {
     console.log('your server is running on port 3001');

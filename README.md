@@ -1,11 +1,14 @@
 How to run the local enviroment? 
-1) Clone the repository from github.
-2) The 'node_modules' folder should be missing, so to retrieve this we must execute the following command:
+1) Clone the repository from github. (run command 'git clone https://github.com/karanjot-khatter/finer-vision.git' in terminal)
+2) Make sure you are on the master branch (run 'git checkout master' in terminal)
+3) The 'node_modules' folder should be missing, so to retrieve this we must execute the following command in the finer-vision folder:
 npm install
-3) Install the latest version of node and npm (as this is a react app).
-4) MySQL:
-- Create a database called finer_vision
-- Execute the following query: 
+4) Install the latest version of node and npm (as this is a react app).
+5) Express:
+- Go into the 'server' folder and type 'npm run devStart' - make sure to keep this running
+6) MySQL:
+- Create a database called 'finer_vision'
+- Execute the following query in the finer-vision database:
 
 CREATE TABLE Users (
     id int NOT NULL AUTO_INCREMENT,
@@ -19,11 +22,12 @@ CREATE TABLE Users (
     PRIMARY KEY (id)
 );
 
-5) In the current directory run the command 'npm start' and this should open up the project.
+7) In the 'finer-vision' directory run the command 'npm start' and this should open up the project.
 
 REFERENCES:
 
-https://react-bootstrap.github.io/components/accordion/
+https://react-bootstrap.github.io/components/accordion/ - create accordion
+https://www.youtube.com/watch?v=re3OIOr9dJI - inserting data into database 
 
 ERRORS:
 - When you enter all the information in the first step and second step and then click 'next' - the acordion headers need two clicks to function correctly. This is an jquery problem.

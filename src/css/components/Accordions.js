@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Accordion} from 'react-bootstrap';
 import $ from 'jquery';
 import Axios from 'axios';
+import { useNavigate } from 'react-router-dom';
 
 const Accordions = () => {
 
@@ -40,6 +41,8 @@ const Accordions = () => {
 
   }
 
+  const navigate = useNavigate();
+
   const addUser = () => {
     Axios.post('http://localhost:3001/create', {
       first_name: firstName,
@@ -49,9 +52,12 @@ const Accordions = () => {
       gender: gender,
       dob: dob,
       comments: comments
-      }).then(() => {
-        console.log('success');
-      })
+      }).catch(error => {
+        alert('An error occured could not submit to database')
+      });
+
+      navigate('/users')
+
   }
 
   return <div><Accordion defaultActiveKey={['0']} alwaysOpen>
