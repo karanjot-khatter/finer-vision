@@ -3,12 +3,12 @@ How to run the local enviroment?
 2) The 'node_modules' folder should be missing, so to retrieve this we must execute the following command:
 npm install
 3) Install the latest version of node and npm (as this is a react app).
-4) MySQL
+4) MySQL:
 - Create a database called finer_vision
 - Execute the following query: 
 
 CREATE TABLE Users (
-    id int NOT NULL,
+    id int NOT NULL AUTO_INCREMENT,
     first_name varchar(255) NOT NULL,
     surname varchar(255) NOT NULL,
     email_address varchar(255) NOT NULL,
@@ -24,3 +24,6 @@ CREATE TABLE Users (
 REFERENCES:
 
 https://react-bootstrap.github.io/components/accordion/
+
+ERRORS:
+- When you enter all the information in the first step and second step and then click 'next' - the acordion headers need two clicks to function correctly. This is an jquery problem.
