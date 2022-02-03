@@ -1,8 +1,8 @@
 import './css/App.css';
-import Accordions from './css/components/Accordions';
+import Accordions from './components/Accordions';
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
-import NotFound from './css/components/Notfound';
-import Users from './css/components/Users';
+import NotFound from './components/Notfound';
+import Users from './components/Users';
 
 function App() {
   return (
